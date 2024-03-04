@@ -5,8 +5,8 @@ intro = ("""
    \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ )
     \  /\  /  __/ | (_| (_) | | | | | |  __/
      \/  \/ \___|_|\___\___/|_| |_| |_|\___|...
-    To...
-    The Game Made Without Any Imports!! (.com)
+        To...
+            The Game Made Without Any Imports!! (.com)\n\n
 """)
 
 print(intro)
@@ -23,11 +23,16 @@ def option1():
  |_| |_|\___/|_| |_| |_| |_| |_|\___/|_| |_| |_| |_| |_|\___/|_| |_| |_|
 """)
     print("You Lost!")
+    print("You Come Back To Life...\n\n")
+    main()
 
 def option2():
     print("You Walk Down The Stairs...")
     print("You See.. The Exit!")
-    print("You Won! You Get Nothing... HAHhaHAHaHaHaHaH")
+    print("You Won!")
+    print("\n\n")
+    print("As You Are Walking Through The Exit Hallway,\nYou See A Bright Light...\nThen All Of A Sudden...\nYou Are Back To Stage One...\n\n\n\n\n")
+    main()
 
 def option3():
     print("You Run Down The Hallway...")
@@ -40,6 +45,8 @@ def option3():
  |_| |_|\___/|_| |_| |_| |_| |_|\___/|_| |_| |_| |_| |_|\___/|_| |_| |_|
 """)
     print("You Lost!")
+    print("You Come Back To Life...\n\n")
+    main()
 
 def main():
     print("You Find Yourself Trapped In A Room, Spikes Are Slowly Coming Towards You.\nThere Are 3 Doors Infront Of You.\nWhich One Do You Go Through?\n1, 2, 3, or '0 (No Door)'")
@@ -55,7 +62,8 @@ def main():
         print("The Spikes Impale You & You Die.\nYou Lost!")
 
     else:
-        print("Incorrect Option!")
+        print("Incorrect Option!\n\n")
+        main()
 
 if __name__ == "__main__":
         main()
